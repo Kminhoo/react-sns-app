@@ -1,0 +1,74 @@
+@import '../index.scss';
+@import '../pages/home/HomePage.scss';
+
+.post__box {
+  padding: 20px 0px;
+  border-bottom: 2px solid $border;
+
+  a {
+    text-decoration: none;
+  }
+
+  &-profile {
+    padding: 0 15px;
+    text-decoration: none;
+
+    &-img,
+    &-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  }
+
+  &-content {
+    display: block;
+    font-weight: 500;
+    padding: 2rem 1rem;
+  }
+
+  &-footer {
+    padding: 0 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 15px;
+
+    button {
+      @extend .button;
+
+      &.post__delete {
+        background-color: $backgroundRed;
+
+        &:hover,
+        &:focus {
+          background-color: $backgroundRedDark;
+        }
+      }
+
+      &.post__edit {
+        background-color: $gray;
+
+        a {
+          background-color: transparent;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $grayDark;
+        }
+      }
+
+      &.post__likes,
+      &.post__comments {
+        @extend .post__flex;
+
+        &:hover,
+        &:focus {
+          color: $gray;
+        }
+      }
+    }
+  }
+}

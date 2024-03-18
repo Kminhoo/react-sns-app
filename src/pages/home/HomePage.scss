@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+.home {
+  &__title {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+
+  &__tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  &__tab {
+    text-align: center;
+    font-weight: 500;
+    padding: 20px;
+    cursor: pointer;
+
+    &--active {
+      font-weight: 800;
+      border-bottom: 5px solid $activeBorder;
+    }
+
+    &:hover, 
+    &:focus {
+      background-color: $activeBg;
+    }
+  }
+}
+
+
+.post {
+  padding-bottom: 40px;
+
+  &__flex {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__email,
+  &__createdAt {
+    color: $grayText;
+    font-size: 18px;
+  }
+}

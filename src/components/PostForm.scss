@@ -1,0 +1,49 @@
+@import '../index.scss';
+
+.post-form {
+  &__textarea {
+    border: none;
+    font-family: $font;
+    font-size: 20px;
+    width: calc(100% - 40px);
+    min-height: 200px;
+    resize: none;
+    outline: none;
+    padding: 20px;
+    border-bottom: 2px solid $border;
+
+    &::placeholder {
+      font-size: 24px;
+      font-weight: bold;
+      color: $grayText;
+    }
+  }
+
+  &__submit-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.3rem;
+    border-bottom: 2px solid $border;
+
+    .post-form__file {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1.5rem;
+      cursor: pointer;
+
+      &-icon {
+        font-size: 25px;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+
+  &__submit-btn {
+    @extend .button;
+    background-color: $primaryColor;
+  }
+}
