@@ -85,3 +85,29 @@ body {
     }
   }
 }
+
+.loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border: 10px solid orange;
+  border-radius: 50%;
+  animation: loader infinite ease-in-out 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

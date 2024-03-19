@@ -1,0 +1,114 @@
+@import '../index.scss';
+
+.form {
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 20px;
+
+  input {
+    height: 20px;
+    padding: 10px;
+    border-radius: 0.3rem;
+    border: 1px solid lightgray;
+    width: 96%;
+    max-width: 680px;
+  }
+  
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  &__block {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  &__block-lg {
+    margin-top: 28px;
+    width: 100%;
+  }
+
+  label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  &__login--btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__btn--submit {
+    @extend .button;
+    height: 48px;
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    padding: 10px;
+    font-weight: 600;
+    color: $white;
+    background: $primaryColor;
+
+    &:hover,
+    &:focus {
+      background-color: $activeBorder;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $gray;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+
+  &__error {
+    color: $backgroundRed;
+  }
+
+  &__btn--google {
+    @extend .button;
+
+    height: 48px;
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    padding: 10px;
+    font-weight: 600;
+    color: $activeBorder;
+    background: $white;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $activeBg;
+    }
+  }
+
+  &__btn--github {
+    @extend .button;
+
+    height: 48px;
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    padding: 10px;
+    font-weight: 600;
+    color: $white;
+    background: black;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $grayDark;
+    }
+  }
+}

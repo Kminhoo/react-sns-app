@@ -24,7 +24,7 @@ const PostBox = ({ post }: PostBoxProps) => {
         <div className="post__box-profile">
           <div className="post__flex">
             { post.profilUrl 
-              ? <img src={post.profilUrl} alt="profile Image" className="post__box-profile-img" /> 
+              ? <img src={post.profilUrl} alt="profile" className="post__box-profile-img" /> 
               : <FaRegCircleUser className="post__box-profile-icon" />}
             <div className="post__email">{post.email}</div>
             <div className="post__createdAt">{post.createdAt}</div>

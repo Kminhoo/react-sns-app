@@ -1,13 +1,9 @@
-import { CiHeart } from "react-icons/ci";
-import { FaRegCircleUser } from "react-icons/fa6";
-import { FaRegCommentDots } from "react-icons/fa";
-
 import './HomePage.scss'
-
-import { Link } from "react-router-dom";
 
 import PostForm from "components/PostForm";
 import PostBox from "components/PostBox";
+
+
 
 export interface PostProps {
   id: string
