@@ -1,7 +1,14 @@
 @import '../../index.scss';
 
 .home {
+  &__top {
+    @extend .sticky;
+    @extend .transparent;
+  }
+
   &__title {
+    background-color: transparent;
+    width: 100;
     padding: 20px;
     font-weight: 700;
     font-size: 26px;
